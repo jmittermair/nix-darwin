@@ -23,12 +23,9 @@ let user = "james"; in
     agenix.packages."${pkgs.system}".default
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
-  environment.etc = {
-    "pam.d/sudo_local" = { 
-      source = "../../modules/shared/config/etc/pam.d/sudo_local";
-      mode = "0444";
-    };
-  };
+  # environment.etc."pam.d/sudo_local" = { 
+  #   source = "/Users/${user}/modules/shared/config/etc/pam.d/sudo_local";
+  # };
 
   # launchd.user.agentgs.emacs.path = [ config.environment.systemPath ];
   # launchd.user.agents.emacs.serviceConfig = {
