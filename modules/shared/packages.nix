@@ -18,6 +18,10 @@ with pkgs; [
   wget
   zip
 
+  # Nix specific tools
+  nix-index
+
+
   # Encryption and security tools
   age
   age-plugin-yubikey
