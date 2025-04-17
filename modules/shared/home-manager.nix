@@ -28,8 +28,6 @@ let name = "James Mittermair";
       fi
 
       # Define variables for directories
-      export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
-      export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
       export PATH=$HOME/.local/share/bin:$PATH
 
       # Remove history data we don't want to see
@@ -38,7 +36,6 @@ let name = "James Mittermair";
       # Ripgrep alias
       alias search=rg -p --iglob '!node_modules/*'  $@
 
-      # Emacs is my editor
       export ALTERNATE_EDITOR=""
       export EDITOR="vim"
       export VISUAL="vim"
@@ -210,9 +207,9 @@ let name = "James Mittermair";
       };
     };
     extraConfig = ''
-      Host *.redhat.com
-        GSSAPIAuthentication yes
-        GSSAPIDelegateCredentials no
+    Host *.redhat.com
+      GSSAPIAuthentication yes
+      GSSAPIDelegateCredentials no
     '';
   };
 
