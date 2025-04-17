@@ -39,6 +39,12 @@ let user = "james"; in
   #   StandardOutPath = "/tmp/emacs.out.log";
   # };
 
+  security.pam.services.sudo_local = {
+    enable = true;
+    touchIdAuth = true;
+    reattach = true;
+  };
+
   system = {
     stateVersion = 4;
 
