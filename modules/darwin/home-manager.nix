@@ -23,6 +23,11 @@ in
 
   homebrew = {
     enable = true;
+    caskArgs = {
+      no_quarantine = true;
+    };
+    onActivation.cleanup = "zap";
+    taps = builtins.attrNames config.nix-homebrew.taps;
     casks = pkgs.callPackage ./casks.nix {};
     # onActivation.cleanup = "uninstall";
 

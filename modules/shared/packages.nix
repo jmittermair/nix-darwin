@@ -1,6 +1,9 @@
 { pkgs }:
 
 with pkgs; [
+
+  # Work-related tools
+
   # General packages for development and system management
   aspell
   aspellDicts.en
@@ -20,7 +23,6 @@ with pkgs; [
 
   # Nix specific tools
   nix-index
-
 
   # Encryption and security tools
   age
