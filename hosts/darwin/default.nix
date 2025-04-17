@@ -19,25 +19,8 @@ let user = "james"; in
 
   # Load configuration that is shared across systems
   environment.systemPackages = with pkgs; [
-    # emacs-unstable
     agenix.packages."${pkgs.system}".default
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
-
-  # environment.etc."pam.d/sudo_local" = { 
-  #   source = "/Users/${user}/modules/shared/config/etc/pam.d/sudo_local";
-  # };
-
-  # launchd.user.agentgs.emacs.path = [ config.environment.systemPath ];
-  # launchd.user.agents.emacs.serviceConfig = {
-  #   KeepAlive = true;
-  #   ProgramArguments = [
-  #     "/bin/sh"
-  #     "-c"
-  #     "/bin/wait4path ${pkgs.emacs}/bin/emacs && exec ${pkgs.emacs}/bin/emacs --fg-daemon"
-  #   ];
-  #   StandardErrorPath = "/tmp/emacs.err.log";
-  #   StandardOutPath = "/tmp/emacs.out.log";
-  # };
 
   security.pam.services.sudo_local = {
     enable = true;
