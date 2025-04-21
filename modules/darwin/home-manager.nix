@@ -26,7 +26,11 @@ in
     caskArgs = {
       no_quarantine = true;
     };
-    onActivation.cleanup = "zap";
+    onActivation = {
+      autoUpdate = true;
+      cleanup = "zap";
+      upgrade = true;
+    };
     taps = builtins.attrNames config.nix-homebrew.taps;
     casks = pkgs.callPackage ./casks.nix {};
     # onActivation.cleanup = "uninstall";

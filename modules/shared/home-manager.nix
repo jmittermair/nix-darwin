@@ -205,12 +205,13 @@ let name = "James Mittermair";
           )
         ];
       };
+      "*.redhat.com" = {
+        extraOptions = {
+            GSSAPIAuthentication = "yes";
+            GSSAPIDelegateCredentials = "no\n";
+        };
+      };
     };
-    extraConfig = ''
-    Host *.redhat.com
-      GSSAPIAuthentication yes
-      GSSAPIDelegateCredentials no
-    '';
   };
 
   tmux = {

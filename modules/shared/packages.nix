@@ -16,7 +16,7 @@ with pkgs; [
   mc
   neofetch
   neovim
-  openssh
+  # openssh
   sqlite
   wget
   zip
@@ -58,6 +58,6 @@ with pkgs; [
   tmux
   unrar
   unzip
-  yq
+  yq-go
   zsh-powerlevel10k
 ]
