@@ -35,17 +35,7 @@ with pkgs; [
   skopeo
   podman
   podman-compose
-  (pkgs.podman-desktop.overrideAttrs (finalAttrs: previousAttrs: {
-    meta = {
-      description = previousAttrs.description;
-      homepage = previousAttrs.homepage;
-      changelog = previousAttrs.changelog;
-      license = previousAttrs.license;
-      maintainers = previousAttrs.maintainers;
-      inherit (electron-bin.meta) platforms;
-      mainProgram = previousAttrs.mainProgram;
-    };
-  }))
+  podman-desktop
 
   # Media-related packages
   dejavu_fonts

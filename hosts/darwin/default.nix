@@ -64,6 +64,10 @@ let user = "james"; in
         "com.apple.TimeMachine".DoNotOfferNewDisksForBackup = true;
         # Turn on app auto-update
         "com.apple.commerce".AutoUpdate = true;
+        "com.google.Chrome" = {
+          AuthServerAllowlist = "*.redhat.com";
+          AuthNegotiateDelegateAllowlist = "*.redhat.com";
+        };
       };
 
       LaunchServices.LSQuarantine = false;  
