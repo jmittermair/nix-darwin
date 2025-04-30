@@ -55,10 +55,10 @@ with pkgs; [
   jq
   jnv
   ripgrep
+  starship
   tree
   tmux
   unrar
   unzip
   yq-go
-  zsh-powerlevel10k
-]
+  ]
