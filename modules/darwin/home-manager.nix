@@ -78,6 +78,7 @@ in
   local = { 
     dock = {
       enable = true;
+      username = user;
       entries = [
         { path = "/Applications/Slack.app/"; }
         { path = "/Applications/Google\ Chrome.app/"; }
