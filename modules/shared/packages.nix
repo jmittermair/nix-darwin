@@ -12,7 +12,7 @@ with pkgs; [
   btop
   coreutils
   killall
-  kitty
+  #kitty
   mc
   neofetch
   neovim
@@ -31,11 +31,11 @@ with pkgs; [
   libfido2
 
   # Cloud-related tools and SDKs
-  buildah
+  #buildah
   skopeo
   podman
   podman-compose
-  podman-desktop
+  #podman-desktop
 
   # Media-related packages
   dejavu_fonts
