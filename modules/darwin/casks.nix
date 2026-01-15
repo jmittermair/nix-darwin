@@ -13,4 +13,6 @@ _:
 
   # Productivity Tools
   "raycast"
+  "homebrew/cask/logioptions+"
+  "homebrew/cask/logitech-g-hub"
 ]

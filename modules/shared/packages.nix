@@ -44,7 +44,7 @@ with pkgs; [
   font-awesome
   hack-font
   noto-fonts
-  noto-fonts-emoji
+  noto-fonts-color-emoji
   meslo-lgs-nf
 
   # Text and terminal utilities
@@ -57,7 +57,6 @@ with pkgs; [
   ripgrep
   starship
   tree
-  tmux
   unrar
   unzip
   yq-go

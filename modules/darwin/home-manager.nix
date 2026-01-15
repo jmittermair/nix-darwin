@@ -84,7 +84,7 @@ in
         { path = "/Applications/Google\ Chrome.app/"; }
         { path = "${pkgs.vscodium.outPath}/Applications/VSCodium.app/"; }
         { path = "/Applications/Obsidian.app/"; }
-        { path = "${pkgs.kitty.outPath}/Applications/kitty.app/"; }
+#        { path = "${pkgs.kitty.outPath}/Applications/kitty.app/"; }
         { path = "/Applications/Managed\ Software\ Center.app/"; }
         {
           path = "${config.users.users.${user}.home}/.local/share/";
