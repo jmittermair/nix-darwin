@@ -3,6 +3,9 @@ _:
 [
   # Development Tools
   "homebrew/cask/podman-desktop"
+  "cursor"
+  "cursor-cli"
+  "vscodium"
 
   # Communication Tools
   "discord"
@@ -13,6 +16,6 @@ _:
 
   # Productivity Tools
   "raycast"
-  "homebrew/cask/logioptions+"
-  "homebrew/cask/logitech-g-hub"
+  "logioptions+"
+  "logitech-g-hub"
 ]
