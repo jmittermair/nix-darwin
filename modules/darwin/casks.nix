@@ -3,8 +3,6 @@ _:
 [
   # Development Tools
   "homebrew/cask/podman-desktop"
-  "cursor"
-  "cursor-cli"
   "vscodium"
 
   # Communication Tools

@@ -3,6 +3,9 @@
 with pkgs; [
 
   # Work-related tools
+  vscodium
+  code-cursor
+  cursor-cli
 
   # General packages for development and system management
   aspell
@@ -14,7 +17,7 @@ with pkgs; [
   killall
   #kitty
   mc
-  neofetch
+  fastfetch
   neovim
   # openssh
   sqlite
